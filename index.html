@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Se connecter à un compte</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <h2>Connexion</h2>
+            <form action="connexion/traitementConnexion.php" method="POST">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="motDePasse">Mot de passe :</label>
+                <input type="password" id="motDePasse" name="motDePasse" required>
+
+                <button type="submit">Se connecter</button>
+
+                <p>Mot de passe oublié ? <a href="motDePasseOublie/motDePasseOublie.php">Cliquez ici</a></p>
+                <p>Pas encore de compte ? <a href="inscription/inscription.html">Inscrivez-vous ici</a>.</p>
+            </form>
+        </div>
+    </body>
+</html>
